@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.icon" type="image/x-icon">
     <title>Encriptador de TextoDocument</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -12,28 +12,33 @@
 <body>
     <header>
         <a href="#">
-            <img src="./img/logo.svg" alt="Logo de Alura">
+            <img class="logo" src="./img/logo.svg" alt="Logo de Alura">
         </a>
-        <p>Challenge Encriptador de texto - Alura Latam - One Next Education  </p>
+        <h1 class="titulo">Challenge Encriptador de texto - Alura Latam - One Next Education</h1>
     </header>
 
     <main>
-        <section>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <div>
+        <section class="contenedor-uno">
+            <textarea class="contenedor-textarea-uno" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="contenedor-aviso">
                 <img src="./img/aviso.svg" alt="Imagen aviso">
-                <p>Solo letras minúsculas y sin acento</p>
+                <p class="texto-aviso">Solo letras minúsculas y sin acento</p>
             </div>
 
-            <div>
-                <button type="submit">Encriptar</button>
-                <button type="submit">Desencriptar</button>
+            <div class="contenedor-btn">
+                <button class="btn-encriptar" type="submit">Encriptar</button>
+                <button class="btn-desencriptar" type="submit">Desencriptar</button>
             </div>
         </section>
 
-        <section>
-            <textarea name="" id="" cols="30" rows="10" readonly></textarea>
-            <button type="submit">Copiar</button>
+        <section class="contenedor-dos">
+            <div class="contenedor-card">
+                <img src="./img/muñeco.svg" alt="Imagen Muñeco">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea class="contenedor-textarea-dos" name="" id="" cols="30" rows="10" readonly></textarea>
+            <button class="btn-copiar" type="submit">Copiar</button>
         </section>
 
 
@@ -41,7 +46,7 @@
     </main>
 
     <footer>
-        <p>&copy; copyright 2024 - Encriptador de Texto - Desarrollado por Andrés Marín</p>
+        <p class="texto-footer">Encriptador de Texto - Desarrollado por Juan Andrés Marín Mella</p>
         <a href="#">
             <img src="./img/linkedin.svg" alt="Logo Linkedin">
         </a>
